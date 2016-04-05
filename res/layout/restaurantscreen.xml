@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RestaurantScreen" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ratingBar"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/previous"
+        android:layout_toLeftOf="@+id/next"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/numRatings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ratingBar"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/ratingBar"
+        android:layout_toRightOf="@+id/viewMap" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView"
+        android:layout_alignParentRight="true"
+        android:text="Next >>" />
+
+    <EditText
+        android:id="@+id/searchField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/viewMap"
+        android:layout_alignParentTop="true"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/viewMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="View in Google Maps" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/viewMap"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/restaurantName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_marginTop="101dp"
+        android:layout_toRightOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/searchField"
+        android:layout_marginTop="21dp"
+        android:text="&lt;&lt; Prev" />
+
+</RelativeLayout>
